@@ -30,7 +30,7 @@ def get_arguments():
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--data', type=str,
-                        default="E:/Lab/stitching/dataset/Kidney/SAM_Seg/Aug_SAM/Aug_SAM_all")
+                        default="E:/Kidney/FNPC_dataset")
     parser.add_argument('--outdir', type=str,
                         default='/sam_aug5_M8_N30_Ave0.5_ucthre_0.1_fna0.0_fnb1_fpa0_fpb0.2_heavyrough')
 
