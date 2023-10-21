@@ -34,7 +34,7 @@ def get_arguments():
     parser.add_argument('--data', type=str,
                         default="/dataset/Placenta/manualSeg/for_SAM/Reconstruction")
     parser.add_argument('--outdir', type=str,
-                        default='Plancenta/Reconstruction/subjectx/SS2V_M8_N40_Ave0.2_ucthre_0.1_fna90_fnb200_fpa90_fpb200_hardcode_boxconstrain2222_0002')
+                        default='Plancenta/Reconstruction/subjectx')
 
     parser.add_argument('--ckpt', type=str, default='sam_vit_l_0b3195.pth')
     parser.add_argument('--ref_idx', type=str, default='000') # TODO change to "000" when using kidney
@@ -76,17 +76,17 @@ def main():
 
 def SS2V(args, obj_name, images_path, masks_path, output_path, gts_path):
     print("\n------------> Segment " + obj_name)
-    M = 8  # scale ratio
-    N = 40  # number of sampled bounding box
-    ave_thre = 0.2
-    uncertain_thre = 0.1  # uncertain_thre ratio
+    M =   # scale ratio
+    N =   # number of sampled bounding box
+    ave_thre = 
+    uncertain_thre =   # uncertain_thre ratio
 
     # for kidney the value of FN should be small, which means the range should be small
     #
-    fna = 90  # include more FN which outside the avemask but inside the UM, with value fna< and < fnb
-    fnb = 200
-    fpa = 90  # exclude FP which inside the avemask and UM, with value<fpa, or value>fpb
-    fpb = 200
+    fna =   # include more FN which outside the avemask but inside the UM, with value fna< and < fnb
+    fnb = 
+    fpa =   # exclude FP which inside the avemask and UM, with value<fpa, or value>fpb
+    fpb = 
 
     # Path preparation
     test_images_path = os.path.join(images_path, obj_name)
