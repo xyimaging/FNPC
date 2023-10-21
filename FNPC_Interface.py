@@ -12,7 +12,6 @@ import warnings
 warnings.filterwarnings('ignore')
 
 from show import *
-# from per_segment_anything import sam_model_registry, SamPredictor
 from segment_anything import sam_model_registry, SamPredictor
 
 from itertools import combinations
