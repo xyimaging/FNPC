@@ -75,7 +75,7 @@ def main():
             # print("object name is:", obj_name) # object name is: Subject2_20230330_135719_1
             subject_dice_original, subject_assd_original, subject_hf_original, subject_dice_ave, subject_assd_ave, \
             subject_hf_ave, subject_dice_FP_final, subject_assd_FP_final,subject_hf_FP_final, subject_dice_FN_final, \
-            subject_assd_FN_final,subject_hf_FN_final = persam(args, obj_name, images_path, masks_path, output_path, gts_path)
+            subject_assd_FN_final,subject_hf_FN_final = FNPC(args, obj_name, images_path, masks_path, output_path, gts_path)
 
             all_dice_original += subject_dice_original
             all_assd_original += subject_assd_original
@@ -172,7 +172,7 @@ def main():
         file.write("\n")
 
 
-def persam(args, obj_name, images_path, masks_path, output_path, gts_path):
+def FNPC(args, obj_name, images_path, masks_path, output_path, gts_path):
     print("\n------------> Segment " + obj_name)
 
     M = 8  # scale ratio
