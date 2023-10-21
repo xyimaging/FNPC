@@ -33,7 +33,7 @@ def get_arguments():
     parser.add_argument('--data', type=str,
                         default="E:/Lab/stitching/dataset/Kidney/SAM_Seg/Aug_SAM/Aug_SAM_all")
     parser.add_argument('--outdir', type=str,
-                        default='sam_aug/Aug_SAM_all/sam_aug5_M8_N30_Ave0.5_ucthre_0.1_fna0.0_fnb1_fpa0_fpb0.2_heavyrough')
+                        default='/sam_aug5_M8_N30_Ave0.5_ucthre_0.1_fna0.0_fnb1_fpa0_fpb0.2_heavyrough')
 
     parser.add_argument('--ckpt', type=str, default='sam_vit_l_0b3195.pth')
     parser.add_argument('--ref_idx', type=str, default='000') # TODO change to "000" when using kidney
