@@ -32,9 +32,9 @@ def get_arguments():
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--data', type=str,
-                        default="E:/Lab/stitching/dataset/Placenta/manualSegTestForXing/for_SAM/Reconstruction")
+                        default="/dataset/Placenta/manualSeg/for_SAM/Reconstruction")
     parser.add_argument('--outdir', type=str,
-                        default='Plancenta/Reconstruction/P2V1/sam_aug6_M8_N40_Ave0.2_ucthre_0.1_fna90_fnb200_fpa90_fpb200_hardcode_boxconstrain2222_0002')
+                        default='Plancenta/Reconstruction/subjectx/SS2V_M8_N40_Ave0.2_ucthre_0.1_fna90_fnb200_fpa90_fpb200_hardcode_boxconstrain2222_0002')
 
     parser.add_argument('--ckpt', type=str, default='sam_vit_l_0b3195.pth')
     parser.add_argument('--ref_idx', type=str, default='000') # TODO change to "000" when using kidney
@@ -48,7 +48,7 @@ def main():
     args = get_arguments()
     print("Args:", args)
 
-    images_path = args.data + '/Images_P2V1/'
+    images_path = args.data + '/Images_Subjectx/'
     masks_path = args.data + '/Annotations_0002/'
     gts_path = args.data + '/GTs/'
     output_path = './outputs/' + args.outdir
