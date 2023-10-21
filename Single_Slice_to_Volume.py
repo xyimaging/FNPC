@@ -141,11 +141,7 @@ def SS2V(args, obj_name, images_path, masks_path, output_path, gts_path):
     subject_assd_final = []
     subject_hf_final = []
 
-    # for ab_9_7_10_mag, 66, 92
-    # for AJ 63 - 93
-    # for JC: 68 - 90
-    # for p2v1: 59 - 94
-    # for AM 66 - 93
+    # the start slice number and the end slice number
     start_num = 59
     end_num = 94
     minx = 2
