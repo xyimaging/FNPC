@@ -389,7 +389,7 @@ def FNPC(args, obj_name, images_path, masks_path, output_path, gts_path):
         show_box(new_bbox_list[0], axs[0 ,1], color="yellow")
         axs[0 ,1].set_title(f'Ave_D_{case_dice_ave:.2f}_A_{case_assd_ave:.2f}_H_{case_hf_ave:.2f}', fontsize=18)
 
-        # 可视化uncertainty map
+        #
         vis_img = test_image.copy()
         # axs[4].imshow(test_image)
         # show_uncertainty(aleatoric_uncertainty_map, plt.gca())
