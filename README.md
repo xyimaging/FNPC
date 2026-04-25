@@ -58,6 +58,9 @@ Both scripts currently contain placeholder values (e.g., `M`, `N`, `ave_thre`, `
 ### Main Entry Points
 
 #### 1) FNPC Interface (2D Ultrasound)
+
+<img src='figs/qualitative_res.png' width='800'>
+
 File: `FNPC_Interface.py`
 
 - Runs SAM-based segmentation on each 2D ultrasound frame.
@@ -66,6 +69,9 @@ File: `FNPC_Interface.py`
   it estimates uncertainty from multiple augmented box prompts, then updates predicted masks by recovering likely missed regions (FN correction) and suppressing likely over-segmented regions (FP correction).
 
 #### 2) 3D Segmentation / Correction
+
+<img src='figs/ss2v.png' width='800'>
+
 File: `Single_Slice_to_Volume.py`
 
 - Extends the 2D FNPC process to slice-wise 3D volume segmentation.
